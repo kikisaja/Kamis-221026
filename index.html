@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Frequency Counter 📊</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-card">
+        <!-- Header -->
+        <header class="app-header">
+            <span class="badge">kikisaja No. 119</span>
+            <h1>📊 WORD FREQUENCY COUNTER</h1>
+            <p>Analisis kata apa saja yang paling sering muncul dalam teksmu!</p>
+        </header>
+
+        <!-- Input Section -->
+        <div class="input-section">
+            <label for="text-input">Masukkan Paragraf / Artikel:</label>
+            <textarea id="text-input" placeholder="Ketik atau tempel teks panjang di sini untuk dianalisis..."></textarea>
+            
+            <div class="action-row">
+                <button type="button" id="btn-count" class="btn-count">⚡ HITUNG FREKUENSI</button>
+                <button type="button" id="btn-clear" class="btn-clear">🗑️ Bersihkan</button>
+            </div>
+        </div>
+
+        <!-- Result Stats Summary -->
+        <div class="summary-stats">
+            <div class="stat-box">
+                <span class="stat-label">Total Kata</span>
+                <strong id="total-words">0</strong>
+            </div>
+            <div class="stat-box">
+                <span class="stat-label">Kata Unik</span>
+                <strong id="unique-words">0</strong>
+            </div>
+        </div>
+
+        <!-- Frequency List Container -->
+        <div class="frequency-section">
+            <div class="section-title">🏆 Peringkat Kemunculan Kata Teratas</div>
+            <div id="freq-list" class="freq-list">
+                <p class="placeholder-text">Hasil analisis frekuensi kata akan muncul di sini secara berurutan...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
